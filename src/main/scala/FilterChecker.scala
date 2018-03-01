@@ -12,3 +12,6 @@ class FilterChecker(filter: String) {
 
 }
 
+object FilterChecker {
+    def apply(filter: String) = new FilterChecker(filter)
+}

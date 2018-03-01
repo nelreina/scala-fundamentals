@@ -7,13 +7,13 @@ class FileCheckerTests extends FlatSpec {
     "return a list with that file" in {
         val matchingFile = new FileObject("match")
         val listOfFiles = List(new FileObject("random"), matchingFile)
-        val matchedFiles = new FilterChecker("match").findMatchedFiles(listOfFiles)
+        val matchedFiles = FilterChecker("match").findMatchedFiles(listOfFiles)
         assert(matchedFiles == List(matchingFile))
     }
     "FileChecker passed a list with a directory that matches the filter" should 
     "should not return the directory" in {
         val listOfObjects = List(new FileObject("random"), new DirectoryObject("match"))
-        val matchedFiles = new FilterChecker("match").findMatchedFiles(listOfObjects)
+        val matchedFiles = FilterChecker("match").findMatchedFiles(listOfObjects)
         assert(matchedFiles.length == 0 )
     }
 

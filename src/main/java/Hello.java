@@ -1,5 +1,6 @@
-public class Hello {
+package fileSearcher;
+class Hello {
     public static void say(String Name) {
-        System.out.println("Hello un  mas " + Name);
+        System.out.println("Hello " + Name);
     }
 }

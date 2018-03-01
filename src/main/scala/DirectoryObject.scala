@@ -1,7 +1,5 @@
 package filesearcher
 
-class DirectoryObject(val name: String) extends IOObject
+import java.io.File
 
-object DirectoryObject {
-    def apply (name: String) = new DirectoryObject(name)
-}
+case class DirectoryObject(file: File) extends IOObject

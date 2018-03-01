@@ -1,4 +1,4 @@
-package fileSearcher
+package filesearcher
 
 class FileObject(val name: String) extends IOObject
 

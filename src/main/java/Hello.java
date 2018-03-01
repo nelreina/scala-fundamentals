@@ -1,4 +1,5 @@
-package fileSearcher;
+package filesearcher;
+
 class Hello {
     public static void say(String Name) {
         System.out.println("Hello " + Name);
